@@ -1,0 +1,101 @@
+/* Prettify */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
+
+
+:root {
+  --lg-font: 'Kaisei Tokumin', serif;
+  --sm-font: 'Poppins', sans-serif;
+  --red: #af0006;
+  --mavi: #346EAA;
+  --beyaz: #FFFFFF;
+  --turuncu: #EF4040;
+
+}
+
+.sendika-container {
+
+  margin: 20px auto;
+  width: 60%;
+  text-align: center;
+}
+
+/* Card Styles */
+.card {
+  background-image: linear-gradient(-30deg, rgba(168, 43, 43, 0.1), transparent 50%);
+  text-align: left;
+  border-radius: 4px;
+  overflow: hidden;
+
+}
+
+
+
+.item {
+  display: inline-block;
+  margin-top: 8px;
+  max-height: 72px;
+  vertical-align: middle;
+}
+
+
+
+/*# sourceMappingURL=sendika-card.css.map */
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+
+
+.image {
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+
+
+.image img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: none;
+  max-width: 180px;  
+  height: auto;  
+  width: auto;
+}
+
+
+@media (max-width: 900) {
+  .image img {
+    max-width: 100px;
+    /* 100x100 boyutları */
+    max-height: 100px;
+    /* 100x100 boyutları */
+  }
+}
+
+/* 50x50 boyutları için medya sorgusu */
+@media (max-width: 600px) {
+  .image img {
+    max-width: 70px;
+    /* 50x50 boyutları */
+    max-height: 70px;
+    /* 50x50 boyutları */
+  }
+}
+
+.btn-sendika {
+
+  background-color: var(--turuncu);
+  color: var(--beyaz);
+  border-color: var(--beyaz);
+}
+
+.btn-sendika:hover {
+  transition: background-color 0.5s;
+  color: var(--turuncu);
+  border-color: var(--turuncu);
+}
